@@ -55,52 +55,10 @@ $(document).ready(function() {
 	    image: "<img src='assets/images/Blood.jpeg' class='img-circle shadow'>"
 	  },
 	  {
-	    question: "The oldest Vampire is",
+	    question: "The oldest Vampire is...",
 	    choices: ["Unknown", "Darius", "Salamence", "Dracula"],
 	    correctAnswer: "Dracula",
 	    image: "<img src='assets/images/Dracula.jpeg' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "Who is the protagonist of Nintendo's franchise often set in the Kingdom of Hyrule?",
-	    choices: ["Zelda", "Mario", "Donkey Kong", "Link"],
-	    correctAnswer: "Link",
-	    image: "<img src='assets/images/link.png' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "Which game is most likely to never come out?",
-	    choices: ["Half Life 3", "Half Life 3", "Half Life 3", "Half Life 3"],
-	    correctAnswer: "Half Life 3",
-	    image: "<img src='assets/images/halfLife.jpg' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "Joel and Ellie are two companions in what video game?",
-	    choices: ["Dragon Quest VIII", "Final Fantsay XIII", "The Last of Us", "Dragon Age: Origins"],
-	    correctAnswer: "The Last of Us",
-	    image: "<img src='assets/images/lastOfUs.jpg' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "In which game can you find tears, vigors and robotic patriots?",
-	    choices: ["Bioshock: Infinite", "Modern Warfare", "Wolfenstein", "Civilization IV"],
-	    correctAnswer: "Bioshock: Infinite",
-	    image: "<img src='assets/images/bioshock.jpg' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "Who developed the Mass Effect series? ",
-	    choices: ["Bethesda", "Bioware", "Ubisoft", "2K Games"],
-	    correctAnswer: "Bioware",
-	    image: "<img src='assets/images/bioware.jpg' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "Inhabitants of which fictional town find themselves under the influence of the doctrines of The Order?",
-	    choices: ["Raccoon City", "Silent Hill", "Bright Falls", "Rapture"],
-	    correctAnswer: "Silent Hill",
-	    image: "<img src='assets/images/silentHill.jpg' class='img-circle shadow'>"
-	  },
-	  {
-	    question: "Which of these characters can't jump in any of their games?",
-	    choices: ["Link", "Agent 47", "Pac Man", "James Bond"],
-	    correctAnswer: "Agent 47",
-	    image: "<img src='assets/images/hitman.jpg' class='img-circle shadow'>"
 	  }];
 	  
 
@@ -164,16 +122,16 @@ $(document).ready(function() {
 	// screen that shows final score and nice message :)
 	function resultsScreen() {
 		if (correctGuesses === questions.length) {
-			var endMessage = "Perfection! Might want to go outside more tho";
-			var bottomText = "#nerdalert!";
+			var endMessage = "Perfection! Eternal life is yours, but you still lose...";
+			var bottomText = "The End";
 		}
 		else if (correctGuesses > incorrectGuesses) {
 			var endMessage = "Good work! But do better you can...";
-			var bottomText = "all your base are belong to us";
+			var bottomText = "Eternal Life is almost yours....";
 		}
 		else {
-			var endMessage = "You seem to have taken an arrow to the knee";
-			var bottomText = "#scrub";
+			var endMessage = "Who's standing behind you...";
+			var bottomText = "cover your neck....";
 		}
 		$("#gameScreen").html("<p>" + endMessage + "</p>" + "<p>You got <strong>" + 
 			correctGuesses + "</strong> right.</p>" + 
